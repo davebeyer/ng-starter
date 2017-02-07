@@ -1,0 +1,7 @@
+dist/**
+!dist/.gitkeep
+
+src/**/*.js
+!src/systemjs.config.extras.js
+!src/systemjs.config.js
+

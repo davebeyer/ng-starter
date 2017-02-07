@@ -5,11 +5,6 @@ node_modules
 npm-debug.log
 debug.log
 
-client/dist
-client/src/**/*.js
-!client/src/systemjs.config.extras.js
-!client/src/systemjs.config.js
-
 *.js.map
 e2e/**/*.js
 e2e/**/*.js.map
