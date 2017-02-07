@@ -1,11 +1,27 @@
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule }               from '@angular/core';
+import { BrowserModule }          from '@angular/platform-browser';
+import { RouterModule,
+         PreloadAllModules }      from '@angular/router';
 
-import { AppComponent }  from './app.component';
+// Unclear why '/index' is needed on these
+import { AppComponent }           from './app.component';
+import { HomeComponent }          from './home/index';
+import { NoContentComponent }     from './no-content/index';
+
+import { AppRoutingModule }       from './app.routes';
 
 @NgModule({
-  imports:      [ BrowserModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+    bootstrap:    [
+        AppComponent
+    ],
+    imports:      [
+        BrowserModule,
+        AppRoutingModule
+    ],
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        NoContentComponent
+    ]
 })
 export class AppModule { }
