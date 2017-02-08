@@ -7,6 +7,7 @@ import { RouterModule }           from '@angular/router';
 import { routes }                 from './ew.routes';
 import { EWComponent }            from './ew.component';
 import { ElementComponent }       from './element.component';
+import { InvalidEWPathComponent } from './invalidewpath.component';
 
 console.log('`EW` bundle loaded asynchronously');
 
@@ -14,7 +15,8 @@ console.log('`EW` bundle loaded asynchronously');
   declarations: [
       // Components / Directives/ Pipes
       EWComponent,
-      ElementComponent
+      ElementComponent,
+      InvalidEWPathComponent
   ],
   imports: [
       // CommonModule,
