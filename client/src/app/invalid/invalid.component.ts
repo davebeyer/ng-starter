@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector : 'no-content',
+    selector : 'invalid-path',
     moduleId : module.id,
     template : `
       <div>
@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
       </div>
     `
 })
-export class NoContentComponent {
+export class InvalidComponent {
 
 }

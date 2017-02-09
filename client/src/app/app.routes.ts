@@ -6,7 +6,7 @@ import { Routes,
 
 // Unclear why '/index' is needed on these
 import { HomeComponent }          from './home/index';
-import { NoContentComponent }     from './no-content/index';
+import { InvalidComponent }       from './invalid/index';
 
 // import { DataResolver }           from './app.resolver';
 
@@ -14,7 +14,7 @@ export const routes: Routes = [
     { path: '',       component:    HomeComponent },
     { path: 'home',   component:    HomeComponent },
     { path: 'ew',     loadChildren: 'app/+ew/index#EWModule' },
-    { path: '**',     component:    NoContentComponent }
+    { path: '**',     component:    InvalidComponent }
 ];
 
 @NgModule({

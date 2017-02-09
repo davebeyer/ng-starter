@@ -6,7 +6,7 @@ import { RouterModule,
 // Unclear why '/index' is needed on these
 import { AppComponent }           from './app.component';
 import { HomeComponent }          from './home/index';
-import { NoContentComponent }     from './no-content/index';
+import { InvalidComponent }       from './invalid/index';
 
 import { AppRoutingModule }       from './app.routes';
 
@@ -21,7 +21,7 @@ import { AppRoutingModule }       from './app.routes';
     declarations: [
         AppComponent,
         HomeComponent,
-        NoContentComponent
+        InvalidComponent
     ]
 })
 export class AppModule { }
