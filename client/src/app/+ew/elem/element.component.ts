@@ -17,10 +17,8 @@ console.log('`Element` component loaded asynchronously');
     selector : 'ew',
     moduleId : module.id,
     template: `
-      <h1>Hello from Element</h1>
-
       <div [ngSwitch]="ewInfo.type">
-        <elem-choice *ngSwitchCase="'ch'" [ewInfo]="ewInfo"></elem-choice>
+        <elem-choice *ngSwitchCase="'ic'" [ewInfo]="ewInfo"></elem-choice>
 
         <span *ngSwitchDefault>
           <b>Unknown element type ({{ewInfo.type}})!</b>

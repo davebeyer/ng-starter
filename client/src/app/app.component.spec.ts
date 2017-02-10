@@ -45,11 +45,8 @@ describe('AppComponent', function () {
     it('should have h1 element', () => expect(de).not.toBe(null) );
 
     it('should have expected <h1> text', () => {
-        console.log("here1");
         fixture.detectChanges();
-        console.log("here2");
         const h1 = de.nativeElement;
-        console.log("here3");
         expect(h1.innerText).toMatch(/Welcome/i,
                                      '<h1> should include "Welcome"');
     });

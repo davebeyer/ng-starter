@@ -12,11 +12,25 @@ import { Component,
     selector : 'elem-choice',
     moduleId : module.id,
     template : `
-      <div> I am a choice element {{ewInfo.ewId}}/{{ewInfo.elemId}} </div>
+      <span *ngFor="let choice of elem.choices">
+        <input type="radio" name="ew-12-elem-4-{{index}}" value="{{choice.value}}" checked="{{choice.checked}}" > {{choice.label}} <br>
+      </span>
+      <!--
+        <div> I am a choice element {{ewInfo.ewId}}/{{ewInfo.elemId}} </div>
+        -->
     `,
 })
 export class ChoiceElement implements OnInit {
     @Input() ewInfo : any
+
+    elem = {
+        choices : [
+            {label : 'yes',   value : 1, checked : ''},
+            {label : 'no',    value : 2, checked : 'checked'},
+            {label : 'maybe', value : 3, checked : ''}
+        ],
+    };
+
 
     public ngOnInit() {
         console.log('hello `Choice Element` component');

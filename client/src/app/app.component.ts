@@ -4,6 +4,7 @@ import { Router }                 from '@angular/router';
 @Component({
   selector: 'ew-app',
   template: `
+    <!--
     <nav>
       <a [routerLink]=" ['./'] " routerLinkActive="active">
         (default)
@@ -15,6 +16,7 @@ import { Router }                 from '@angular/router';
         EW Builder
       </a>
     </nav>
+    -->
 
     <main>
       <router-outlet></router-outlet>
